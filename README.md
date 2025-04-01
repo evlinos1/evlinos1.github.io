@@ -117,22 +117,37 @@ Applying Windows Server 2022 and reaching the desktop of our VM
 <p> 
   Once password is set, Log in to your Admin account to finally see your VM desktop! ( To check if Windows Server 2022 has been downloaded, go to the bottom left search bar and type "winver")
 </p>
-<h3 align="center">Resolution</h3>
+<br />
+<h2>Active Directory Setup</h2>
 <br />
 <p>
-  Support agent John sees in his portal that System Administrator agent Jane has left him a message and that the ticket is now closed:>
+This next section will focus on creating our Active Directory from scratch.
 </p>
+<h3 align="center">Server Manager Setup</h3>
 <p>
+  When you first load into the desktop of your VM environment, an application named "Server Manager" will appear. On Server Manager's dashboard, click "Manage" then "Add Roles and Features".
   <img src="https://i.imgur.com/kRpUysm.png" height="75%" width="100%" alt="Working the issue"/>
 </p>
 <br />
-<br />
 <p>
-  This was a very simplistic scenario of the creation of a ticket by a user, how the ticket is assigned and displays the communication of a ticket between agents; subsequently resulting in a resolution.
+ Once you reach the "Add Roles and Features Wizard, click "Next" until you get to the "Server Roles" portion. Select "DNS Server".
+  <img src="">
 </p>
 <p>
-  There are additional scenarios that can also happen while a ticket is being assessed. A ticket can either be reassigned to a different department, escalated in severeity level, or needs to be both reassigned to a more qualified agent/department to handle the issue, depending on business impacts.
+  Click "Next" to reach the "Features" portion and make sure you have "Group Policy Management" checked. Then click "Next" until you have reached "Confirmation" to install. This may take a few minutes, do not close the tab.
+  <img src="">
 </p>
 <p>
-  I hope this tutorial helps you understand and have a better general overview of a life-cycle of a ticket. Help desk agents can expect to regularly deal with anywere between 10 to 100 tickets during their day depeneding on the company size.
+When this has been installed, on the same page under " Active Directory Domain Services" click the blue line that says " Promote this server to a domain controller". 
+</p>
+<p>
+  The new window should be titled "Deployment Configuration" where you will select the bullet point "Add a new forest", and name your Root domain name whatever you see fit, followed by ".local". Click "Next" when you are done.
+  <img src="">
+</p>
+<p>
+  On the next portion, select your Forest and Domain functional level to be Windows Server 2016 for both. Then input a password you will remember. 
+  <img src="">
+</p>
+<p>
+  Click "Next" when you are done with the previous step until you reach "Prerequisites check" Once this has been completed you are able to then click Install. This may take a few minutes, and will restart your VM to apply the changes.
 </p>
