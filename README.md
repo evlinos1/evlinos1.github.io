@@ -106,8 +106,8 @@ Applying Windows Server 2022 and reaching the desktop of our VM
 </p>
 <br />
 <p>
- The next screen will show the drives' Unallocated Space,make sure the 20.0 GB we previously set matches for both "Total Size" and "Free Space".
-  Allow the installation to complete, this may take a few minutes, once complete your VM instance will restart to apply the changes.
+ The next screen will show the drives' Unallocated Space. Make sure the 20.0 GB we previously set matches for both "Total Size" and "Free Space".
+  Allow the installation to complete, this may take a few minutes. Once complete, your VM instance will restart to apply the changes.
 <img src="">
 </p>
 <p>
@@ -115,7 +115,7 @@ Applying Windows Server 2022 and reaching the desktop of our VM
   <img src="">
 </p>
 <p> 
-  Once password is set, Log in to your Admin account to finally see your VM desktop! ( To check if Windows Server 2022 has been downloaded, go to the bottom left search bar and type "winver")
+  Once a password is set, log in to your Admin account to see your VM desktop! ( To check if Windows Server 2022 has been downloaded, go to the bottom left search bar and type "winver")
 </p>
 <br />
 <h2>Active Directory Setup</h2>
@@ -125,7 +125,7 @@ This next section will focus on creating our Active Directory from scratch.
 </p>
 <h3 align="center">Server Manager Setup</h3>
 <p>
-  When you first load into the desktop of your VM environment, an application named "Server Manager" will appear. On Server Manager's dashboard, click "Manage" then "Add Roles and Features".
+  When you first log into the desktop of your VM environment, an application named "Server Manager" will appear. On Server Manager's dashboard, click "Manage" then "Add Roles and Features".
   <img src="https://i.imgur.com/kRpUysm.png" height="75%" width="100%" alt="Working the issue"/>
 </p>
 <br />
@@ -138,7 +138,7 @@ This next section will focus on creating our Active Directory from scratch.
   <img src="">
 </p>
 <p>
-When this has been installed, on the same page under " Active Directory Domain Services" click the blue line that says " Promote this server to a domain controller". 
+When this has been installed, on the same page under " Active Directory Domain Services," click the blue line that says " Promote this server to a domain controller". 
 </p>
 <p>
   The new window should be titled "Deployment Configuration" where you will select the bullet point "Add a new forest", and name your Root domain name whatever you see fit, followed by ".local". Click "Next" when you are done.
@@ -149,7 +149,7 @@ When this has been installed, on the same page under " Active Directory Domain S
   <img src="">
 </p>
 <p>
-  Click "Next" when you are done with the previous step until you reach "Prerequisites check" Once this has been completed you are able to then click Install. This may take a few minutes, and will restart your VM to apply the changes.
+  Click "Next" when you are done with the previous step until you reach "Prerequisites check" Once this has been completed, you are able to then click Install. This may take a few minutes and will restart your VM to apply the changes.
 </p>
 <br/>
 <h2>Setting up AD for a fictional company</h2>
@@ -174,7 +174,10 @@ When this has been installed, on the same page under " Active Directory Domain S
 <br/>
 <h3 align="center"> Creating Groups under Sub OUs and selecting appropriate Group Types.</h3>
 <p>
-  This step follows a similar flow to creating an OU, feel free to use these steps to format your own Active Directory to your liking. First, enter an OU you have created and right-click on the sub-OU "Users", then select "Group" where you will name the group "IT".
+  This step follows a similar flow to creating an OU. Feel free to use these steps to format your own Active Directory to your liking. First, enter an OU you have created and right-click on the sub-OU "Users", then select "Group" where you will name the group "IT".
   <img src="">
 </p>
-
+<p>
+  Next, create another sub-OU with the title " DL-ITAdmins", "DL" being short for "Distribution List". For group type, we will select "Distribution", not "Security". 
+  <img src="">
+</p>
