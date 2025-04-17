@@ -35,6 +35,7 @@ This is a tutorial for setting up a basic Active Directory and VM at home so you
 Download Version 17.5.2
   <img src="https://i.imgur.com/iKNVxtt.png: height="75%" width="100%" alt="O"/>
 </p>
+<br/>
 <p>
   When you double-click the download pop-up and follow the instructions the setup wizard displays, make sure to select "Personal Use" at the end. 
 </p>
@@ -53,7 +54,7 @@ Download Version 17.5.2
 <h2>Virtual Machine Boot Up</h2>
 <br />
 <p>
-  The focus for the next portion will be booting up our Virtual Machine and Configuring the Windows Server on VMware Workstation Pro
+  The focus for the next portion will be booting up our Virtual Machine and configuring the Windows Server on VMware Workstation Pro
 </p>
 <h3 align="center">Creating a New Virtual Machine</h3>
 <br />
@@ -61,27 +62,32 @@ Download Version 17.5.2
 When you load VMware Workstation Pro, you will view a screen with three selections. Pick the left-most that says "Create a New Virtual Machine"
   <img src="https://i.imgur.com/LaYs48E.png">
 </p>
+<br/>
 <p>
-The Virtual Machine Wizard will show, click next and select "I will install the operating system later" then hit next. We will use the Windows Server 2022 download for this section later. 
+The Virtual Machine Wizard will show, click next and select "I will install the operating system later," then hit next. We will use the Windows Server 2022 download for this section later. 
   <img src="https://i.imgur.com/KTLsX5P.png">
 </p>
+<br/>
 <p>
-Select the guest OS as Microsoft Windows, then click the "Version" tab and select "Windows Server 2022", then hit next. 
-  <img src="https://i.imgur.com/wVucqKf.png" height="75%" width="100%" alt="Communication"/>
+Select the guest OS as Microsoft Windows, then click the "Version" tab and select "Windows Server 2022", then hit Next. 
+  <img src="https://i.imgur.com/21rCQZ1.png">
 </p>
+<br/>
 <p>
-For the next section, you may name your VM however you see fit, then select next.
+For the next section, you may name your VM however you see fit, then select Next.
 </p>
 <p> 
-For Specific Disk Capacity, change the Maximum disk size to "20GB" and select next to officially create your Virtual Instance!
+For Specific Disk Capacity, change the Maximum disk size to "20GB" and select Next to officially create your Virtual Instance!
   <img src="https://i.imgur.com/lCVfgOp.png">
 </p>
+<br/>
 <p>
-Once you view a blank screen, which is your powered-off VM, right-click whatever you named your VM on the left tab and go to CD/DVD (SATA). Then, click the "use ISO image file" to select your Windows Server 2022 file. 
-  <img src=""> 
+Once you view a blank screen, which is your powered-off VM, right-click whatever you named your VM on the left tab and go to CD/DVD (SATA). Then, click the "use ISO image file" to select your Windows Server 2022 file.  
+  <img src="https://i.imgur.com/4es3b2e.png">
 </p>
+<br/>
 <p>
-  Then, select "Ok" to load in your ISO and power on your Virtual Machine! (Important: When you view the message "Press any key to boot from CD or DVD" click any button to avoid issues with the bootup. If you miss the timing, right-click on your VM's name on the left to shutdown and reboot your VM) 
+  Then, select "Ok" to load your ISO and power on your Virtual Machine! (Important: When you view the message "Press any key to boot from CD or DVD" click any button to avoid issues with the bootup. If you miss the timing, right-click on your VM's name on the left to shutdown and reboot your VM) 
 </p>
 <h3> 
 Applying Windows Server 2022 and reaching the desktop of our VM
@@ -91,24 +97,24 @@ Applying Windows Server 2022 and reaching the desktop of our VM
   When your VM boots up, select your language and select "Next".
 </p>
 <p>
-  <img src="https://i.imgur.com/i61WQKi.jpg" height="75%" width="100%" alt="Sys admin agent login"/>
-</p>
-<p>
   The next pop-up will ask you to select the OS you wish to install. Select "Windows Server 2022 Standard Evaluation (Desktop Experience)" and then press "Next" to continue.
-  <img src="">
+  <img src="https://i.imgur.com/21rCQZ1.png">
 </p>
+<br/>
 <p>
  It will ask which type of installation you want, select "Custom" and then select "Next".
 </p>
 <p>
-  <img src="https://i.imgur.com/dDGgL6A.png" height="75%" width="100%" alt="Working the issue"/>
+  <img src="https://i.imgur.com/dDGgL6A.png">
 </p>
 <br />
 <p>
  The next screen will show the drives' Unallocated Space. Make sure the 20.0 GB we previously set matches for both "Total Size" and "Free Space".
   Allow the installation to complete, this may take a few minutes. Once complete, your VM instance will restart to apply the changes.
+<br/>
 <img src="https://i.imgur.com/D4JFFXt.png">
 </p>
+<br/>
 <p>
   Once your VM restarts, you may choose a password for the Admin account (This will be the "main" account given the permissions to create the Active Directory)
   <img src="https://i.imgur.com/tnpeAyf.png">
