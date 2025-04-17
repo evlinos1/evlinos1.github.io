@@ -28,7 +28,7 @@ This is a tutorial for setting up a basic Active Directory and VM at home so you
 <p>
   Click the first link in "Helpful Links" and create a Broadcom account to access VMware Workstation's Free Download:
 </p>
-  <img src="https://github.com/user-attachments/assets/bc7ea7fb-c148-4cd1-a47c-8cbd3ecdedf5: height="75%" width="100%" alt="Download VMware Workstation"/>
+  <img src="https://imgur.com/zWMLl48" height="75%" width="100%">
   <br />
 <h3 align="center"> Downloading VMware Workstation Pro</h3>
 <p>
