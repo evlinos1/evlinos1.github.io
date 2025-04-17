@@ -151,3 +151,30 @@ When this has been installed, on the same page under " Active Directory Domain S
 <p>
   Click "Next" when you are done with the previous step until you reach "Prerequisites check" Once this has been completed you are able to then click Install. This may take a few minutes, and will restart your VM to apply the changes.
 </p>
+<br/>
+<h2>Setting up AD for a fictional company</h2>
+<br/> 
+<p>
+  The final section will be setting up OUs, groups/group types, and users for a fictional company. 
+</p>
+<h3 align="center"> Creating OUs</h3> 
+<br/>
+<p> 
+  After you have installed, reset, and logged into your account (Note: the account will be associated with your Domain name, followed by "Administrator"). Go into the Windows search bar to find the application " Active Directory Users and Computers". 
+  <img src="">
+</p>
+<p>
+  Once in the application, right-click on your ____.local domain we created before, and hover over "New" and select "Organizational Unit".It will bring a text box, where you can name it whatever you'd like. In this example, I called three separate OUs "USA", "Europe",and "Asia. 
+ <img src="">
+</p>
+<p>
+  To simulate a typical work environment, I created three OU's within these three OU's. I named these OU's "Computer", "Users", and "Server". 
+  <img src="">
+</p>
+<br/>
+<h3 align="center"> Creating Groups under Sub OUs and selecting appropriate Group Types.</h3>
+<p>
+  This step follows a similar flow to creating an OU, feel free to use these steps to format your own Active Directory to your liking. First, enter an OU you have created and right-click on the sub-OU "Users", then select "Group" where you will name the group "IT".
+  <img src="">
+</p>
+
