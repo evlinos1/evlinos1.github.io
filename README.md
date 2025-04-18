@@ -78,7 +78,7 @@ For the next section, you may name your VM however you see fit, then select Next
 </p>
 <p> 
 For Specific Disk Capacity, change the Maximum disk size to "20GB" and select Next to officially create your Virtual Instance!
- <center><img src="https://i.imgur.com/lCVfgOp.png" : height="500" width="600"></center>
+ <img src="https://i.imgur.com/lCVfgOp.png" : height="500" width="600">
 </p>
 <br/>
 <p>
